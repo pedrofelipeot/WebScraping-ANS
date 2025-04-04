@@ -1,43 +1,19 @@
-# === FRONTEND ===
 .DS_Store
-Thumbs.db
-*.log
-*.tmp
+node_modules
+/dist
 
-# === NODE.JS (Frontend Vue.js) ===
-node_modules/
-npm-debug.log*
-yarn-error.log
-.yarn-integrity
-dist/
 
-# === SISTEMAS OPERACIONAIS ===
-*.swp
-*.swo
-*.swn
-*.bak
-*.tmp
-*.swm
-*.swd
-
-# === CONFIGURAÇÕES DE USUÁRIO ===
-.env
-.env.local
-.env.development
-.env.test
-.env.production
-
-# === LOCAL ENV ===
+# local env files
 .env.local
 .env.*.local
 
-# === LOG FILES ===
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# === EDITOR ===
+# Editor directories and files
 .idea
 .vscode
 *.suo

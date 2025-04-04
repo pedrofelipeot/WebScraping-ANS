@@ -1,0 +1,169 @@
+{
+    "info": {
+        "name": "Minha API - Testes",
+        "_postman_id": "12345678-1234-5678-1234-567812345678",
+        "description": "Cole\u00e7\u00e3o de testes para a API de operadoras.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Buscar por termo gen\u00e9rico",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/buscar?q=Odonto",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "buscar"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "Odonto"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Buscar por CNPJ espec\u00edfico",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/buscar?q=10387254000168",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "buscar"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "10387254000168"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Teste com erro (termo inv\u00e1lido)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/buscar?q=@@@###",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "buscar"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "@@@###"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Buscar Operadora - Cidade (S\u00e3o Paulo)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/buscar?q=S\u00e3o Paulo",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "buscar"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "S\u00e3o Paulo"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Buscar Operadora - CNPJ (04212174000179)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/buscar?q=04212174000179",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "buscar"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "04212174000179"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Buscar Operadora - Modalidade (Autogest\u00e3o)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/buscar?q=Autogest\u00e3o",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "buscar"
+                    ],
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "Autogest\u00e3o"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
